@@ -1,0 +1,67 @@
+
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+body {
+  color: #555;
+  font-size: .373333rem;
+}
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.5;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,body{
+    font-family:"webfont","微软雅黑", "Microsoft Yahei", Arial, sans-serif;
+    width: 100%;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var, i {
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  color: #555;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}

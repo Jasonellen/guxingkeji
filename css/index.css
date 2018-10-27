@@ -1,0 +1,118 @@
+.home .header .mobititle {
+  font-size: .48rem;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #4d4d4d;
+  background: #f9f9f9;
+  line-height: .866667rem; }
+.home .header .showmenumobli {
+  height: 1.493333rem;
+  background: #fff;
+  padding-top: .013333rem;
+  margin-top: -.013333rem;
+  position: relative;
+  border-bottom: .013333rem solid #DCDCDC; }
+  .home .header .showmenumobli img {
+    width: 100%; }
+  .home .header .showmenumobli .comlogomob {
+    margin-top: .213333rem;
+    width: 3.626667rem;
+    height: 1.066667rem;
+    float: left;
+    margin-left: .4rem; }
+  .home .header .showmenumobli .comlogomobrig {
+    margin-top: .466667rem;
+    width: .68rem;
+    height: .493333rem;
+    float: right;
+    margin-right: .4rem; }
+  .home .header .showmenumobli .comlogomobrigdis {
+    margin-top: .4rem;
+    width: .68rem;
+    float: right;
+    margin-right: .4rem;
+    display: none; }
+  .home .header .showmenumobli .comlogoshow {
+    height: 1.973333rem;
+    width: 100%;
+    position: absolute;
+    top: 1.493333rem;
+    background: #fff;
+    z-index: 2;
+    display: none; }
+    .home .header .showmenumobli .comlogoshow .center-block {
+      display: block;
+      margin-right: auto;
+      margin-left: auto; }
+    .home .header .showmenumobli .comlogoshow .col-xs-2 {
+      width: 16.66666667%;
+      position: relative;
+      min-height: .013333rem;
+      padding-right: .2rem;
+      padding-left: .2rem;
+      float: left; }
+    .home .header .showmenumobli .comlogoshow .comlogoshowitemimg {
+      width: .693333rem;
+      height: .693333rem;
+      margin: 0rem auto; }
+      .home .header .showmenumobli .comlogoshow .comlogoshowitemimg img {
+        margin-top: .4rem;
+        width: 100%; }
+    .home .header .showmenumobli .comlogoshow .comlogoshowitemtext {
+      font-size: .32rem;
+      font-family: PingFang-SC-Medium;
+      font-weight: 500;
+      color: #4d4d4d;
+      line-height: .586667rem;
+      margin-top: .44rem;
+      text-align: center; }
+.home .indexoneph {
+  background: url(/image/sy_bj.png);
+  background-size: cover;
+  padding-top: 6.6rem;
+  padding-bottom: .666667rem; }
+  .home .indexoneph .indexoneitemph {
+    margin-top: 0.4rem;
+    overflow: hidden;
+    width: 100%;
+    margin-right: 1.28rem;
+    margin-left: .2rem;
+    margin-top: .733333rem; }
+    .home .indexoneph .indexoneitemph .indexoneimgph {
+      width: 1.2rem;
+      height: 1.32rem;
+      margin-left: 9%;
+      float: left;
+      margin-top: .32rem; }
+      .home .indexoneph .indexoneitemph .indexoneimgph img {
+        width: 100%; }
+  .home .indexoneph .indexonewordph {
+    float: left;
+    margin-left: .453333rem; }
+    .home .indexoneph .indexonewordph .oneitemtextph {
+      color: #FBC66C;
+      text-align: left;
+      font-size: .373333rem;
+      margin-top: .266667rem; }
+    .home .indexoneph .indexonewordph .oneitemtextdph {
+      color: #fff;
+      text-align: left;
+      font-size: .32rem; }
+.home .example {
+  background: url(/image/sy2_bj.png);
+  background-size: cover;
+  overflow: hidden; }
+  .home .example .anlititle {
+    margin-top: 140px;
+    margin-bottom: 10px;
+    font-size: 0.533333rem;
+    color: #fff;
+    text-align: center;
+    width: 100%; }
+  .home .example .imgwrap {
+    width: 451px; }
+
+/*# sourceMappingURL=index.css.map */
