@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>谷行科技</title>
+    <script src='js/flexible.js'></script>
+    <script src='js/jquery.js'></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/aboutus.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class='header'>
+        <div class="showmenumobli">
+            <div class="comlogomob"><img src="image/logo_sy.png"></div> 
+            <div class="comlogomobrig" style="display: block;"><img src="image/gengduo.png"></div> 
+            <div class="comlogomobrigdis"><img src="image/aguanbi.png"></div> 
+            <div class="comlogoshow">
+                <a href="/index.html" class="comlogoshowitem col-xs-2 center-block">
+                    <div class="comlogoshowitemimg ">
+                        <img src="image/asy.png">
+                    </div>
+                    <div class="comlogoshowitemtext text-center">
+                        首页
+                    </div>
+                </a>
+                <a href="/service.html" class="comlogoshowitem col-xs-2 center-block">
+                    <div class="comlogoshowitemimg ">
+                        <img src="image/afuwu.png">
+                    </div>
+                    <div class="comlogoshowitemtext text-center">
+                        服务
+                    </div>
+                </a>
+                <a href="/index.html" class="comlogoshowitem col-xs-2 center-block">
+                    <div class="comlogoshowitemimg ">
+                        <img src="image/anli.png">
+                    </div>
+                    <div class="comlogoshowitemtext text-center">
+                        案例
+                    </div>
+                </a>
+                <a href="/index.html" class="comlogoshowitem col-xs-2 center-block">
+                    <div class="comlogoshowitemimg ">
+                        <img src="image/azixun.png">
+                    </div>
+                    <div class="comlogoshowitemtext text-center">
+                        资讯
+                    </div>
+                </a>
+                <a href="/aboutus.html" class="comlogoshowitem col-xs-2 center-block">
+                    <div class="comlogoshowitemimg ">
+                        <img src="image/aguanyu.png">
+                    </div>
+                    <div class="comlogoshowitemtext text-center">
+                        关于
+                    </div>
+                </a>
+                <a href="#bottom" class="comlogoshowitem col-xs-2 center-block">
+                    <div class="comlogoshowitemimg ">
+                        <img src="image/alianxi.png">
+                    </div>
+                    <div class="comlogoshowitemtext text-center">
+                        联系
+                    </div>
+                </a>
+            </div> 
+        </div>
+    </div>
+    <script>
+        $(function(){
+                $(".comlogomobrig").click(function(){
+                $(".comlogoshow").css("display","block");
+                $(".comlogomobrig").css("display","none");
+                $(".comlogomobrigdis").css("display","block");
+                for(var i=0; i<$('.comlogoshowitem').length;i++){
+                    $('.comlogoshowitem').eq(i).animate({top:0},(i+1)*(200-i*i),'swing')
+                }
+            });
+
+            $(".comlogomobrigdis").click(function(){
+                $('.comlogoshowitem').stop();
+                $('.comlogoshowitem').css("top",-160)
+                $(".comlogomobrig").css("display","block");
+                $(".comlogoshow").css("display","none");
+                    $(".comlogomobrigdis").css("display","none");
+            });
+        
+        })
+    </script>
+    <div class='bodycenter'>
+        <div class="abouttop">
+            <div class="aboutust2">关于我们</div>
+            <div class="aboutbtnarea ">
+                <div class="btnout"><div class="aboutbtn  btnabstract aboutbtnactive">简介</div></div>
+                <div class="btnout"> <div class="aboutbtn  btndevelop">发展</div></div>
+                <div class="btnout"> <div class="aboutbtn  btngohead">前行</div></div>
+            </div>
+            <div class="aboutintr">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp谷形科技是由一支从2013年开始专注做互联网技术开发的团队和一支从2014年
+                    开始做自媒体社群运营和企业服务的团队强强联合打造，逐渐成为引领营销导向的旗帜。	
+            </div>
+        </div>
+
+        <div class="lunboarea">
+            <div class="aboutcenter abstract">
+                <div class="centerpart">
+                    <div class="abstitle">99<span>%</span>
+                    </div>
+                    <div class="dothing">客户满意度</div>
+                </div>
+                <div class="centerpart">
+                    <div class="abstitle">6<span>年</span>
+                    </div>
+                    <div class="dothing"> 资深技术+营销团队   </div>
+                </div>
+                <div class="centerpart">
+                    <div class="abstitle">100<span>家</span>
+                    </div>
+                    <div class="dothing">服务知名企业</div>
+                </div>
+            </div>
+             <div class="aboutcenter develop">
+                <div class="yeartextph">
+                    <div class="yeartextphtext">2013年</div>
+                    <div class="yeartextphtext">2014年</div>
+                    <div class="yeartextphtext">2015年</div>
+                    <div class="yeartextphtext">2016年</div>
+                </div>
+                <div class="midlineph">
+                    <div class="linedotph">
+                        <div class="linedotinph"></div>
+                    </div>
+                    <div class="linedotph2">
+                        <div class="linedotinph"></div>
+                    </div>
+                    <div class="linedotph3">
+                        <div class="linedotinph"></div>
+                    </div>
+                    <div class="linedotph4">
+                        <div class="linedotinph"></div>
+                    </div>
+                </div>
+                <div class="dothingph">
+                    <div class="dothingphtext">做seo/sem/小程序/线上推广等</div>
+                    <div class="dothingphtext">深圳最具年轻人影响力的自媒体</div>
+                    <div class="dothingphtext">为百家世界五百强企业服务</div>
+                    <div class="dothingphtext2">整合内容策划与全网营销<br/>大力发展段视频营销和移动推广</div>
+
+                </div>
+               
+            </div>
+            <div class="aboutcenter gohead">
+                <div class="aboutcenterimg">
+                    <div class="aterimg"><img src="image/chuangxing.png"/></div>
+                    创新力<br/>
+                    <p>innovate</p>
+                </div>
+                <div class="aboutcenterimg">
+                    <div class="aterimg"><img src="image/zhixing.png"/></div>
+                    执行力<br/>
+                    <p>implement</p>
+                </div>
+                <div class="aboutcenterimg">
+                        <div class="aterimg"><img src="image/xiaoli.png"/></div>
+                    高效力<br/>
+                    <p>efficiency</p>
+                </div>
+            </div>
+        </div>
+        <div class="goright">
+            <img src="/image/right.jpg" alt="" width="100%">
+            <div class='gobtn'></div>
+        </div>
+
+        <div class="bottombody" style="display: block;" id='bottom'>
+            <div class="bottomcenter" align="center">
+                <div class="bttop" align="left">
+                    <div class="contentus">联系我们</div>
+                    <div class="phone"><img src="image/sj.png">+86&nbsp;&nbsp; 18666661686</div>
+                    <div class="email"><img src="image/youxiang.png">gushing2018@126.com</div>
+                    <div class="comaddress"><img src="image/dizhi.png">广东省深圳市南山区南头街道田厦翡翠明珠写字楼2007B</div>
+                </div>
+                <div class="btmiiddle">
+                    <div class="btleft" align="left">
+                        <div class="bttitle">&nbsp谷形科技合作伙伴精选</div>
+                        <div class="sentence">.具有良好的互联网思维</div>
+                        <div class="sentence">.在细化领域具有核心竞争力</div>
+                    </div>
+                    <div class="midline"></div>
+                    <div class="btright">
+                        <div class="qrcode" >
+                            <img src="image/erweima.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="address">© 2016 - 2018 谷形科技有限公司 版权所有 | 粤ICP备xxxx号</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('.aboutbtn').click(function(){
+                let index = $(this).index('.aboutbtn')
+                $('.aboutbtn').removeClass('aboutbtnactive')
+                $(this).addClass('aboutbtnactive')
+                $('.aboutcenter').css("display","none")
+                $('.aboutcenter').eq(index).css("display",'block')
+            })
+            $('.gobtn').click(function(){
+                if($('.abstract').css('display') == 'block'){
+                    $('.abstract').css("display","none")
+                    $('.develop').css("display",'block')
+                }else if($('.develop').css('display') == 'block'){
+                    $('.develop').css("display","none")
+                    $('.gohead').css("display",'block')
+                }else if($('.gohead').css('display') == 'block'){
+                    $('.gohead').css("display","none")
+                    $('.abstract').css("display",'block')
+                }
+            })
+        })
+    </script>
+</body>
+</html>

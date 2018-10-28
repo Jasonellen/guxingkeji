@@ -1,67 +1,239 @@
-
-
+@charset "UTF-8";
 *,
 *::before,
 *::after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  word-break: break-word; }
 
 ol, ul, li {
-    list-style: none;
-}
+  list-style: none; }
 
 body {
   color: #555;
-  font-size: .373333rem;
-}
-html {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    line-height: 1.5;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: transparent;
-}
+  font-size: .373333rem; }
 
-html,body{
-    font-family:"webfont","微软雅黑", "Microsoft Yahei", Arial, sans-serif;
-    width: 100%;
-}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  font-family: "webfont","微软雅黑", "Microsoft Yahei", Arial, sans-serif;
+  width: 100%; }
 
 address, caption, cite, code, dfn, em, strong, th, var, i {
   font-style: normal;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 a {
   color: #555;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 a:hover {
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 img {
   border: none;
   display: inline-block;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 .pull-left {
-  float: left;
-}
+  float: left; }
 
 .pull-right {
-  float: right;
-}
+  float: right; }
 
 .clearfix::after {
   display: block;
   content: "";
-  clear: both;
-}
+  clear: both; }
+
+.changeLan {
+  width: 1.333333rem;
+  height: 1.333333rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.333333rem;
+  position: fixed;
+  right: .666667rem;
+  bottom: 2.266667rem;
+  background: #fff;
+  color: #fbc66c;
+  font-size: .533333rem; }
+
+.bottombody {
+  width: 100%;
+  background-color: #404040;
+  padding-bottom: 50px; }
+  .bottombody .bottomcenter {
+    width: 100%;
+    height: 100%; }
+    .bottombody .bottomcenter .bttop {
+      background-color: #404040;
+      padding-top: 1.2rem; }
+      .bottombody .bottomcenter .bttop .contentus {
+        font-size: .426667rem;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: #fff;
+        width: 100%;
+        text-align: center; }
+      .bottombody .bottomcenter .bttop .phone {
+        font-size: .373333rem;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: #fbc66c;
+        margin-top: .733333rem;
+        margin-left: .4rem; }
+        .bottombody .bottomcenter .bttop .phone img {
+          margin-right: .4rem;
+          width: .333333rem;
+          height: .466667rem; }
+      .bottombody .bottomcenter .bttop .email {
+        font-size: .373333rem;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: white;
+        margin-top: .4rem;
+        margin-left: .4rem; }
+        .bottombody .bottomcenter .bttop .email img {
+          margin-right: .4rem;
+          width: .373333rem;
+          height: .28rem; }
+      .bottombody .bottomcenter .bttop .comaddress {
+        font-size: .32rem;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: white;
+        margin-top: .4rem;
+        margin-left: .4rem; }
+        .bottombody .bottomcenter .bttop .comaddress img {
+          margin-right: .4rem;
+          width: .32rem;
+          height: .4rem; }
+    .bottombody .bottomcenter .btmiiddle {
+      width: 100%;
+      height: 1.733333rem;
+      margin-top: .8rem; }
+    .bottombody .bottomcenter .btleft {
+      float: left;
+      margin-left: 11%;
+      width: 405px; }
+      .bottombody .bottomcenter .btleft .bttitle {
+        font-size: .32rem;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: white; }
+      .bottombody .bottomcenter .btleft .sentence {
+        line-height: .466667rem;
+        font-size: .266667rem;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: white; }
+    .bottombody .bottomcenter .midline {
+      width: .013333rem;
+      height: 1.346667rem;
+      float: left;
+      margin-top: .066667rem;
+      border: 0.013333rem solid #fbc66c; }
+    .bottombody .bottomcenter .btright {
+      float: right;
+      margin-right: 14%; }
+      .bottombody .bottomcenter .btright .qrcode {
+        width: 1.133333rem;
+        height: 1.533333rem; }
+        .bottombody .bottomcenter .btright .qrcode img {
+          width: 100%; }
+    .bottombody .bottomcenter .address {
+      font-size: .24rem;
+      font-family: PingFang-SC-Medium;
+      font-weight: 500;
+      color: white;
+      margin-top: .266667rem;
+      display: block;
+      width: 100%;
+      text-align: center; }
+
+.header .comlogoshowitem {
+  top: -160px; }
+.header .mobititle {
+  font-size: .48rem;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #4d4d4d;
+  background: #f9f9f9;
+  line-height: .866667rem; }
+.header .showmenumobli {
+  height: 1.493333rem;
+  background: #fff;
+  padding-top: .013333rem;
+  margin-top: -.013333rem;
+  position: relative;
+  border-bottom: .013333rem solid #DCDCDC; }
+  .header .showmenumobli img {
+    width: 100%; }
+  .header .showmenumobli .comlogomob {
+    margin-top: .213333rem;
+    width: 3.626667rem;
+    height: 1.066667rem;
+    float: left;
+    margin-left: .4rem; }
+  .header .showmenumobli .comlogomobrig {
+    margin-top: .466667rem;
+    width: .68rem;
+    height: .493333rem;
+    float: right;
+    margin-right: .4rem; }
+  .header .showmenumobli .comlogomobrigdis {
+    margin-top: .4rem;
+    width: .68rem;
+    float: right;
+    margin-right: .4rem;
+    display: none; }
+  .header .showmenumobli .comlogoshow {
+    height: 1.973333rem;
+    width: 100%;
+    position: absolute;
+    top: 1.493333rem;
+    background: #fff;
+    z-index: 2;
+    display: none;
+    overflow: hidden; }
+    .header .showmenumobli .comlogoshow .center-block {
+      display: block;
+      margin-right: auto;
+      margin-left: auto; }
+    .header .showmenumobli .comlogoshow .col-xs-2 {
+      width: 16.66666667%;
+      position: relative;
+      min-height: .013333rem;
+      padding-right: .2rem;
+      padding-left: .2rem;
+      float: left; }
+    .header .showmenumobli .comlogoshow .comlogoshowitemimg {
+      width: .693333rem;
+      height: .693333rem;
+      margin: 0rem auto; }
+      .header .showmenumobli .comlogoshow .comlogoshowitemimg img {
+        margin-top: .4rem;
+        width: 100%; }
+    .header .showmenumobli .comlogoshow .comlogoshowitemtext {
+      font-size: .32rem;
+      font-family: PingFang-SC-Medium;
+      font-weight: 500;
+      color: #4d4d4d;
+      line-height: .586667rem;
+      margin-top: .44rem;
+      text-align: center; }
+
+/*# sourceMappingURL=common.css.map */

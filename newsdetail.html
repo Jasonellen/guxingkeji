@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>谷行科技</title>
+    <script src='js/flexible.js'></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/newsdetail.css">
+    <script src='js/jquery.js'></script>
+    <script src='js/api.js'></script>
+</head>
+<body class='newsdetail'>
+    <!-- 头部 -->
+    <div class='header'>
+        <div class="showmenumobli">
+            <div class="comlogomob"><img src="image/logo_sy.png"></div> 
+            <div class="comlogomobrig" style="display: block;"><img src="image/gengduo.png"></div> 
+            <div class="comlogomobrigdis"><img src="image/aguanbi.png"></div> 
+            <div class="comlogoshow">
+                <a href="/index.html" class="comlogoshowitem col-xs-2 center-block">
+                    <div class="comlogoshowitemimg ">
+                        <img src="image/asy.png">
+                    </div>
+                    <div class="comlogoshowitemtext text-center">
+                        首页
+                    </div>
+                </a>
+                <a href="/service.html" class="comlogoshowitem col-xs-2 center-block">
+                    <div class="comlogoshowitemimg ">
+                        <img src="image/afuwu.png">
+                    </div>
+                    <div class="comlogoshowitemtext text-center">
+                        服务
+                    </div>
+                </a>
+                <a href="/index.html" class="comlogoshowitem col-xs-2 center-block">
+                    <div class="comlogoshowitemimg ">
+                        <img src="image/anli.png">
+                    </div>
+                    <div class="comlogoshowitemtext text-center">
+                        案例
+                    </div>
+                </a>
+                <a href="/index.html" class="comlogoshowitem col-xs-2 center-block">
+                    <div class="comlogoshowitemimg ">
+                        <img src="image/azixun.png">
+                    </div>
+                    <div class="comlogoshowitemtext text-center">
+                        资讯
+                    </div>
+                </a>
+                <a href="/aboutus.html" class="comlogoshowitem col-xs-2 center-block">
+                    <div class="comlogoshowitemimg ">
+                        <img src="image/aguanyu.png">
+                    </div>
+                    <div class="comlogoshowitemtext text-center">
+                        关于
+                    </div>
+                </a>
+                <a href="#bottom" class="comlogoshowitem col-xs-2 center-block">
+                    <div class="comlogoshowitemimg ">
+                        <img src="image/alianxi.png">
+                    </div>
+                    <div class="comlogoshowitemtext text-center">
+                        联系
+                    </div>
+                </a>
+            </div> 
+        </div>
+    </div>
+    <script>
+        $(function(){
+                $(".comlogomobrig").click(function(){
+                $(".comlogoshow").css("display","block");
+                $(".comlogomobrig").css("display","none");
+                $(".comlogomobrigdis").css("display","block");
+                for(var i=0; i<$('.comlogoshowitem').length;i++){
+                    $('.comlogoshowitem').eq(i).animate({top:0},(i+1)*(200-i*i),'swing')
+                }
+            });
+
+            $(".comlogomobrigdis").click(function(){
+                $('.comlogoshowitem').stop();
+                $('.comlogoshowitem').css("top",-160)
+                $(".comlogomobrig").css("display","block");
+                $(".comlogoshow").css("display","none");
+                 $(".comlogomobrigdis").css("display","none");
+            });
+        
+        })
+    </script>
+    <div class="newsbody">
+        <div class="title">
+            <div class="artcaltitle"></div>
+            <div class="artime"></div>
+        </div>
+        <div class="content">
+           
+        </div>
+        <!-- <div class="nextnews">下一篇:SEO迎来新增长点，第一股闻道网络被资本追捧</div> -->
+    </div>
+    <!-- 底部 -->
+    <div class="bottombody" style="display: block;" id='bottom'>
+            <div class="bottomcenter" align="center">
+                <div class="bttop" align="left">
+                    <div class="contentus">联系我们</div>
+                    <div class="phone"><img src="image/sj.png">+86&nbsp;&nbsp; 18666661686</div>
+                    <div class="email"><img src="image/youxiang.png">gushing2018@126.com</div>
+                    <div class="comaddress"><img src="image/dizhi.png">广东省深圳市南山区南头街道田厦翡翠明珠写字楼2007B</div>
+                </div>
+                <div class="btmiiddle">
+                    <div class="btleft" align="left">
+                        <div class="bttitle">&nbsp谷形科技合作伙伴精选</div>
+                        <div class="sentence">· 具有良好的互联网思维</div>
+                        <div class="sentence">· 在细化领域具有核心竞争力</div>
+                    </div>
+                    <div class="midline"></div>
+                    <div class="btright">
+                        <div class="qrcode" >
+                            <img src="image/erweima.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="address">© 2016 - 2018 谷形科技有限公司 版权所有 | 粤ICP备xxxx号</div>
+            </div>
+        </div>
+        <script>
+            $(function(){
+                var langulage = localStorage.getItem('Lang') || ''
+                var id = location.href.split('id=')[1]
+                $.get(api[langulage?'EN':'CH'].contentInfo(id),function({data,msg}){
+                    if(msg == 'success'){
+                        $('.artcaltitle').html(data.title)
+                        $('.artime').html('发布于'+data.createTime.split(' ')[0])
+                        $('.content').html(data.content)
+                    }
+                })
+            })
+        </script>
+</body>
+</html>

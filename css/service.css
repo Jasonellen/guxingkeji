@@ -1,0 +1,28 @@
+.service .sersecpart {
+  padding-bottom: .666667rem;
+  text-align: center;
+  overflow: hidden; }
+  .service .sersecpart img {
+    display: block;
+    margin: .773333rem auto;
+    width: 3.72rem; }
+  .service .sersecpart .sersecparttext {
+    font-size: .453333rem;
+    text-align: center;
+    margin: .2rem; }
+    .service .sersecpart .sersecparttext span {
+      font-size: .853333rem;
+      color: #ddd;
+      margin-right: .133333rem;
+      position: relative;
+      top: .066667rem; }
+  .service .sersecpart .sersecparttext2 {
+    text-align: left;
+    padding-left: 1.533333rem;
+    font-size: .32rem; }
+    .service .sersecpart .sersecparttext2 span {
+      display: inline-block;
+      margin-right: .466667rem;
+      margin-bottom: .2rem; }
+
+/*# sourceMappingURL=service.css.map */

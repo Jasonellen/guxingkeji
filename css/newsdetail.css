@@ -1,0 +1,27 @@
+.newsdetail {
+  background: #f6f6f6; }
+  .newsdetail .newsbody {
+    padding-bottom: .666667rem;
+    min-height: calc(100vh - 10rem ); }
+    .newsdetail .newsbody .title {
+      text-align: center;
+      font-size: .48rem;
+      padding: .666667rem 1.2rem; }
+    .newsdetail .newsbody .artime {
+      font-size: .32rem;
+      color: #999;
+      margin-top: .133333rem; }
+    .newsdetail .newsbody .content {
+      padding: 0 .4rem; }
+      .newsdetail .newsbody .content * {
+        font-weight: normal;
+        font-style: normal;
+        font-size: .346667rem !important;
+        background: none;
+        color: #4d4d4d !important; }
+      .newsdetail .newsbody .content img {
+        width: 80%;
+        display: block;
+        margin: .266667rem auto; }
+
+/*# sourceMappingURL=newsdetail.css.map */

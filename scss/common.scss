@@ -1,0 +1,288 @@
+
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-break: break-word;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+body {
+  color: #555;
+  font-size: .373333rem;
+}
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.5;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,body{
+    font-family:"webfont","微软雅黑", "Microsoft Yahei", Arial, sans-serif;
+    width: 100%;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var, i {
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  color: #555;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.changeLan{
+  width: 1.333333rem;
+  height: 1.333333rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.333333rem;
+  position: fixed;
+  right: .666667rem;
+  bottom: 2.266667rem;
+  background: #fff;
+  color: #fbc66c;
+  font-size: .533333rem;
+}
+
+.bottombody{
+    width:100%;
+    background-color: #404040;
+    padding-bottom: 50px;
+    .bottomcenter{
+        width:100%;
+        height:100%;
+        .bttop{
+            background-color: #404040;
+            padding-top: 1.2rem;
+            .contentus{
+                font-size: .426667rem;
+                font-family: PingFang-SC-Medium;
+                font-weight: 500;
+                color: #fff;
+                width: 100%;
+                text-align: center;
+                
+            }
+            .phone{
+                font-size: .373333rem;
+                font-family: PingFang-SC-Medium;
+                font-weight: 500;
+                color: rgba(251,198,108,1);
+                margin-top:.733333rem;
+                margin-left: .4rem;
+                img{
+                    margin-right: .4rem;
+                    width: .333333rem;
+                    height: .466667rem;
+                }
+            }
+            .email{
+                font-size:.373333rem;
+                font-family:PingFang-SC-Medium;
+                font-weight:500;
+                color:rgba(255,255,255,1);
+                margin-top:.4rem;
+                margin-left: .4rem;
+                img{
+                    margin-right: .4rem;
+                    width: .373333rem;
+                    height: .28rem;
+                }
+                
+            }
+            .comaddress{
+                font-size:.32rem;
+                font-family:PingFang-SC-Medium;
+                font-weight:500;
+                color:rgba(255,255,255,1);
+                margin-top:.4rem;
+                margin-left: .4rem;
+                img{
+                    margin-right: .4rem;
+                    width: .32rem;
+                    height: .4rem;
+                }
+            }
+        }
+        .btmiiddle{
+            width: 100%;
+            height:1.733333rem;
+            margin-top: .8rem;
+        }
+        .btleft{
+            float:left;
+            margin-left: 11%;
+            width: 405px;
+            .bttitle{
+                font-size:.32rem;
+                font-family:PingFang-SC-Medium;
+                font-weight:500;
+                color:rgba(255,255,255,1);
+            }
+            .sentence{
+                line-height: .466667rem;
+                font-size:.266667rem;
+                font-family:PingFang-SC-Medium;
+                font-weight:500;
+                color:rgba(255,255,255,1);
+            }
+        }
+        .midline{
+            width:.013333rem;
+            height:1.346667rem;
+            float: left;
+            margin-top: .066667rem;
+            border:.013333rem solid rgba(251,198,108,1);
+        }
+
+        .btright{
+            float:right;
+            margin-right: 14%;
+            .qrcode{
+                width:1.133333rem;
+                height: 1.533333rem;
+                img{
+                    width:100%;
+                }
+            }
+        }
+        .address{
+            font-size:.24rem;
+            font-family:PingFang-SC-Medium;
+            font-weight:500;
+            color:rgba(255,255,255,1);
+            margin-top: .266667rem;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+}
+
+.header{
+    .comlogoshowitem{
+        top: -160px;
+    }
+    .mobititle{
+        font-size: .48rem;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: rgba(77,77,77,1);
+        background: #f9f9f9;
+        line-height: .866667rem;
+    }
+    .showmenumobli{
+        height: 1.493333rem;
+        background: #fff;
+        padding-top: .013333rem;
+        margin-top: -.013333rem;
+        position: relative;
+        border-bottom: .013333rem solid #DCDCDC;
+        img{
+            width: 100%;
+        }
+        .comlogomob{
+            margin-top: .213333rem;
+            width: 3.626667rem;
+            height: 1.066667rem;
+            float: left;
+            margin-left: .4rem;
+        }
+        .comlogomobrig{
+            margin-top: .466667rem;
+            width: .68rem;
+            height: .493333rem;
+            float: right;
+            margin-right: .4rem;
+        }
+        .comlogomobrigdis{
+            margin-top: .4rem;
+            width: .68rem;
+            float: right;
+            margin-right: .4rem;
+            display: none;
+        }
+        .comlogoshow{
+            height: 1.973333rem;
+            width: 100%;
+            position: absolute;
+            top: 1.493333rem;
+            background: #fff;
+            z-index: 2;
+            display: none;
+            overflow: hidden;
+            .center-block{
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .col-xs-2{
+                width: 16.66666667%;
+                position: relative;
+                min-height: .013333rem;
+                padding-right: .2rem;
+                padding-left: .2rem;
+                float: left;
+            }
+            .comlogoshowitemimg {
+                width: .693333rem;
+                height: .693333rem;
+                margin: 0rem auto;
+                img{
+                    margin-top: .4rem;
+                    width: 100%;
+                }
+            }
+            .comlogoshowitemtext{
+                font-size: .32rem;
+                font-family: PingFang-SC-Medium;
+                font-weight: 500;
+                color: rgba(77,77,77,1);
+                line-height: .586667rem;
+                margin-top: .44rem;
+                text-align: center;
+            }
+        }
+    }
+}
